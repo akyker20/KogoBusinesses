@@ -24,7 +24,7 @@ ul.tweets-list {
 	margin-bottom: 0px;
 }
 
-div.twitter-feed {
+section.twitter-feed {
 	width: 100%;
 	position: fixed;
 	background: white;
@@ -56,7 +56,7 @@ div.tweet-names-holder {
 	width: 130px;
 }
 
-ul.tweets-list li {
+ul.tweets-list li.tweet-container {
 	width: 500px;
 	float: left;
 	background: white;
@@ -102,7 +102,7 @@ div.intro-left-container h1 strong {
 	font-size: 52px;
 }
 
-div.intro-info-container {
+div.info-container {
 	width: 1200px;
 	margin: 0px auto;
 	overflow: auto;
@@ -117,13 +117,13 @@ div.intro-left-container p {
 	font-weight: 200;
 }
 
-div.gray-container {
+section.three-steps {
 	width: 100%;
 	background: #5ED84C;
 	overflow: auto;
 }
 
-div.gray-container span {
+section.three-steps span {
 	margin-top: 15px;
 	font-size: 70px;
 }
@@ -145,7 +145,7 @@ div.home-icon-container p {
 	font-size: 1.3em;
 }
 
-div.price-info-container {
+section.price-information {
 	padding: 100px 200px;
 	width: 100%;
 	background-size: 100%;
@@ -153,7 +153,7 @@ div.price-info-container {
 	overflow: auto;
 }
 
-div.reasons-container {
+section.reasons-kogo-is-better {
 	padding: 100px 200px;
 	width: 100%;
 	background: #5ED84C;
@@ -247,7 +247,7 @@ ul.sample-list li {
 	padding-bottom: 10px;
 }
 
-div.contact-info-wrapper {
+section.contact-info {
 	background: white;
 	width: 100%;
 	background-size: 100%;
