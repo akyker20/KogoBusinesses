@@ -105,6 +105,7 @@ div.intro-left-container h1 strong {
 div.intro-info-container {
 	width: 1200px;
 	margin: 0px auto;
+	overflow: auto;
 }
 
 div.intro-left-container h1 p.lighter {
@@ -155,7 +156,7 @@ div.price-info-container {
 div.reasons-container {
 	padding: 100px 200px;
 	width: 100%;
-	background: #469E3A;
+	background: #5ED84C;
 	color: white;
 	overflow: auto;
 }
@@ -181,7 +182,7 @@ div.reasons-container h1 {
 
 ul.reasons-list {
 	list-style: decimal;
-	font-size: 1.3em;
+	font-size: 1.35em;
 	font-family: cursive;
 }
 
@@ -211,7 +212,7 @@ p.pricing-summary {
 
 p.reasons-summary {
 	padding-bottom: 10px;
-	border-bottom: 5px solid #5ED84C;
+	border-bottom: 5px solid #3EC729;
 	font-size: 1.5em;
 }
 
