@@ -1,0 +1,1 @@
+web: gunicorn kogo.wsgi --log-file -
