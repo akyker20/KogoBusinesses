@@ -26,42 +26,36 @@ ul.tweets-list {
 
 section.twitter-feed {
 	width: 100%;
-	position: fixed;
 	background: white;
 	z-index: 10;
-}
-
-div.twitter-image-holder {
-	overflow: auto;
 }
 
 img.twitter-profile-image {
 	float: left;
 	margin-right: 10px;
+	width: 77px;
 }
 
 p.twitter-screen-name {
-	font-size: 18px;
-	margin-bottom: 1px;
+	font-size: 22px;
+	margin-bottom: 0px;
 	font-weight: bold;
 }
 
 p.twitter-name {
-	margin-top: 0px;
-	margin-bottom: 0px;
+	margin: 0px 0px 0px 2px;
+	font-size: 1.1em;
 }
 
 div.tweet-names-holder {
 	float: left;
-	width: 130px;
 }
 
-ul.tweets-list li.tweet-container {
-	width: 500px;
+ul.tweets-list li.tweet-wrapper {
 	float: left;
-	background: white;
 	padding: 10px;
 	margin-right: 17px;
+	width: 560px;
 }
 
 div.glyphicon-chevron-right {
@@ -75,10 +69,13 @@ ul.tweets-list li:last-child {
 	margin-right: 0px;
 }
 
-div.tweet-holder {
-	font-size: 0.9em;
+div.tweet-text-holder {
+	margin-left: 20px;
+	padding-top: 3px;
 	float: left;
-	width: 280px;
+	width: 300px;
+	font-family: "Titillium Web",sans-serif;
+	font-size: 18px;
 }
 
 
@@ -128,7 +125,7 @@ section.three-steps span {
 	font-size: 70px;
 }
 
-div.home-icon-container {
+div.icon-container {
 	float: left;
 	text-align: center;
 	width: 33%;
@@ -141,7 +138,7 @@ div.three-step-container {
 	color: white;
 }
 
-div.home-icon-container p {
+div.icon-container p {
 	font-size: 1.3em;
 }
 
@@ -182,8 +179,8 @@ div.reasons-container h1 {
 
 ul.reasons-list {
 	list-style: decimal;
-	font-size: 1.35em;
-	font-family: cursive;
+	font-size: 1.6em;
+	font-family: "Titillium Web",sans-serif;
 }
 
 ul.reasons-list li {
@@ -254,9 +251,8 @@ section.contact-info {
 }
 
 div.contact-info-container {
-	padding: 40px;
+	padding: 100px;
 	text-align: center;
-	padding-bottom: 140px;
 }
 
 div.contact-info-container h1.lg {

@@ -1,5 +1,27 @@
 {% extends 'base.html' %}
 
+<!-- {% load time_converter %}
+<section class="twitter-feed">
+  <ul class="tweets-list">
+    {% for tweet in tweets %}
+    <li class="tweet-wrapper">
+      <div class="tweet">
+        <img class="twitter-profile-image" src="{{tweet.user.profile_image_url}}">
+        <div class="tweet-names-holder">
+          <p class="twitter-screen-name">@{{tweet.user.screen_name}}</p>
+          <p class="twitter-name">{{tweet.user.name}}</p>
+          <p class="twitter-name">{{ tweet.created_at|get_twitter_date }}</p>
+        </div>
+        <div class="tweet-text-holder">
+          {{tweet.text}}
+        </div>
+      </div>
+    </li>
+    {% endfor %}
+    <div class="glyphicon glyphicon-chevron-right" />
+  </ul>
+</section> -->
+
 {% block content %}
 <section class="intro">
 	<div class="info-container">
@@ -25,39 +47,19 @@
 
 <section class="three-steps">
 	<div class="three-step-container">
-		<div class="home-icon-container">
+		<div class="icon-container">
 			<p>You give us an advertisement.</p>
 			<span class="glyphicon glyphicon-film"></span>
 		</div>
-		<div class="home-icon-container">
+		<div class="icon-container">
 			<p>We show students.</p>
 			<span class="glyphicon glyphicon-user"></span>
 		</div>
-		<div class="home-icon-container">
+		<div class="icon-container">
 			<p>Students buy your products.</p>
 			<span class="glyphicon glyphicon-usd green"></span>
 		</div>
 	</div>
-</section>
-
-<section class="twitter-feed">
-  <ul class="tweets-list">
-  	{% for tweet in tweets %}
-  	<li class="tweet-container shadow">
-			<div class="twitter-image-holder">
-				<img class="twitter-profile-image" src="{{tweet.user.profile_image_url}}">
-				<div class="tweet-names-holder">
-					<p class="twitter-screen-name">@{{tweet.user.screen_name}}</p>
-					<p class="twitter-name">{{tweet.user.name}}</p>
-				</div>
-				<div class="tweet-holder">
-					<font class="small">{{tweet.text}}</font>
-				</div>
-			</div>
-		</li>
-  	{% endfor %}
-  	<div class="glyphicon glyphicon-chevron-right" />
-  </ul>
 </section>
 
 <section class="price-information">
