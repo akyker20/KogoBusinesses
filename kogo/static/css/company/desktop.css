@@ -6,7 +6,8 @@ section.intro {
 	background: white;
 	width: 100%;
 	background-size: 100%;
-	height: 690px;
+	padding: 115px;
+	border-bottom: solid 12px #5ED84C;
 }
 
 div.video-holder {
@@ -16,68 +17,6 @@ div.video-holder {
 	background: gray;
 	opacity: 0.8;
 }
-
-ul.tweets-list {
-	overflow: auto;
-	list-style: none;
-	padding: 10px;
-	margin-bottom: 0px;
-}
-
-section.twitter-feed {
-	width: 100%;
-	background: white;
-	z-index: 10;
-}
-
-img.twitter-profile-image {
-	float: left;
-	margin-right: 10px;
-	width: 77px;
-}
-
-p.twitter-screen-name {
-	font-size: 22px;
-	margin-bottom: 0px;
-	font-weight: bold;
-}
-
-p.twitter-name {
-	margin: 0px 0px 0px 2px;
-	font-size: 1.1em;
-}
-
-div.tweet-names-holder {
-	float: left;
-}
-
-ul.tweets-list li.tweet-wrapper {
-	float: left;
-	padding: 10px;
-	margin-right: 17px;
-	width: 560px;
-}
-
-div.glyphicon-chevron-right {
-	font-size: 65px;
-	color: LightGray;
-	float: left;
-	margin-left: 50px;
-}
-
-ul.tweets-list li:last-child {
-	margin-right: 0px;
-}
-
-div.tweet-text-holder {
-	margin-left: 20px;
-	padding-top: 3px;
-	float: left;
-	width: 300px;
-	font-family: "Titillium Web",sans-serif;
-	font-size: 18px;
-}
-
 
 
 img.android {
@@ -114,36 +53,8 @@ div.intro-left-container p {
 	font-weight: 200;
 }
 
-section.three-steps {
-	width: 100%;
-	background: #5ED84C;
-	overflow: auto;
-}
-
-section.three-steps span {
-	margin-top: 15px;
-	font-size: 70px;
-}
-
-div.icon-container {
-	float: left;
-	text-align: center;
-	width: 33%;
-}
-
-div.three-step-container {
-	width: 1315px;
-	margin: 15px auto;
-	overflow: hidden;
-	color: white;
-}
-
-div.icon-container p {
-	font-size: 1.3em;
-}
-
 section.price-information {
-	padding: 100px 200px;
+	padding: 170px 200px 190px 200px;
 	width: 100%;
 	background-size: 100%;
 	background: white;
@@ -151,9 +62,9 @@ section.price-information {
 }
 
 section.reasons-kogo-is-better {
-	padding: 100px 200px;
+	padding: 180px 200px;
 	width: 100%;
-	background: #5ED84C;
+	background: #33425A;
 	color: white;
 	overflow: auto;
 }
@@ -209,7 +120,7 @@ p.pricing-summary {
 
 p.reasons-summary {
 	padding-bottom: 10px;
-	border-bottom: 5px solid #3EC729;
+	border-bottom: 5px solid #41CFC0;
 	font-size: 1.5em;
 }
 
@@ -248,17 +159,13 @@ section.contact-info {
 	background: white;
 	width: 100%;
 	background-size: 100%;
-}
-
-div.contact-info-container {
-	padding: 100px;
 	text-align: center;
+	padding: 120px;
 }
 
 div.contact-info-container h1.lg {
 	font-size: 60px;
 }
-
 
 p.contact-summary {
 	margin: 0px auto;
@@ -268,9 +175,3 @@ p.contact-summary {
 	font-size: 1.5em;
 	width: 500px;
 }
-
-img.bottom {
-	width: 100%;
-}
-
-/* End Business Informational Page */

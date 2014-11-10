@@ -1,13 +1,5 @@
 /*Universal element and class styling*/
 
-body{
-	background: url(../images/background.jpg) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
-
 input#id_email, input#id_username {
 	text-transform: lowercase;
 }
@@ -48,8 +40,13 @@ div.navbar-header a.navbar-brand {
 
 nav.navbar.navbar-inverse {
 	margin-bottom: 0px;
-	background-color: #5ED84C;
-	border-color: #5ED84C;
+	background-color: #33425A;
+	border-color: #33425A;
+	height: 65px;
+}
+
+a.navbar-brand {
+	font-size: 40px;
 }
 
 ul.nav li {
