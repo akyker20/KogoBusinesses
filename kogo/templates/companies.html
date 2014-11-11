@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block additional_javascript %}
+<script type="text/javascript" src="{{STATIC_URL}}js/companies.js"></script>
+{% endblock %}
+
 {% block content %}
 <section class="intro">
 	<div class="info-container">
