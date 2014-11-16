@@ -7,7 +7,6 @@ section.intro {
 	width: 100%;
 	background-size: 100%;
 	padding: 115px;
-	border-bottom: solid 12px #5ED84C;
 }
 
 div.video-holder {
@@ -88,6 +87,22 @@ div.reasons-container h1 {
 	font-size: 50px;
 }
 
+ul.how-service-works {
+	list-style: none;
+	font-size: 1.6em;
+	font-family: "Titillium Web",sans-serif;
+}
+
+ul.how-service-works li:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+ul.how-service-works li div.glyphicon {
+	float: left;
+	font-size: 40px;
+	margin: 8px 20px 0px 0px;
+}
+
 ul.reasons-list {
 	list-style: decimal;
 	font-size: 1.6em;
@@ -114,7 +129,7 @@ div.left-container h1 {
 
 p.pricing-summary {
 	padding-bottom: 10px;
-	border-bottom: 5px solid #5ED84C;
+	border-bottom: 5px solid #41CFC0;
 	font-size: 1.5em;
 }
 
@@ -150,7 +165,7 @@ ul.sample-list li.active {
 }
 
 ul.sample-list li {
-	border-bottom: 2px solid LightGray;
+	border-bottom: 1px solid rgb(237, 237, 237);
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -171,7 +186,7 @@ p.contact-summary {
 	margin: 0px auto;
 	text-align: center;
 	padding-bottom: 10px;
-	border-bottom: 5px solid #5ED84C;
+	border-bottom: 5px solid #41CFC0;
 	font-size: 1.5em;
 	width: 500px;
 }
