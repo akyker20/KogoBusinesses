@@ -33,8 +33,8 @@ div.intro-left-container h1 {
 	padding-top: 40px
 }
 
-div.intro-left-container h1 strong {
-	font-size: 52px;
+section.intro h1, section.why-kogo h1, section.service h1 {
+	font-size: 50px;
 }
 
 div.info-container {
@@ -43,8 +43,9 @@ div.info-container {
 	overflow: auto;
 }
 
-div.intro-left-container h1 p.lighter {
+section.intro p.lighter {
 	font-size: 26px;
+	color: gray;
 }
 
 div.intro-left-container p {
@@ -60,7 +61,7 @@ section.price-information {
 	overflow: auto;
 }
 
-section.reasons-kogo-is-better {
+section.service, section.why-kogo {
 	padding: 180px 200px;
 	width: 100%;
 	background: #33425A;
@@ -68,16 +69,21 @@ section.reasons-kogo-is-better {
 	overflow: auto;
 }
 
-div.reasons-left-container {
+div.service-left-container {
 	margin-bottom: 50px;
 	float: left;
 	width: 600px;
 }
 
-div.reasons-video {
-	margin: 35px 0px 0px 20px;
-	height: 270px;
-	width: 480px;
+section.why-kogo h1 {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+div.service-video {
+	margin: 100px 0px 0px 20px;
+	height: 275px;
+	width: 490px;
 	background: gray;
 	opacity: 0.8;
 	float: right;
@@ -103,7 +109,7 @@ ul.how-service-works li div.glyphicon {
 	margin: 8px 20px 0px 0px;
 }
 
-ul.reasons-list {
+section.why-kogo ul {
 	list-style: decimal;
 	font-size: 1.6em;
 	font-family: "Titillium Web",sans-serif;
@@ -127,13 +133,7 @@ div.left-container h1 {
 	float: right;
 }
 
-p.pricing-summary {
-	padding-bottom: 10px;
-	border-bottom: 5px solid #41CFC0;
-	font-size: 1.5em;
-}
-
-p.reasons-summary {
+p.pricing-summary, p.summary {
 	padding-bottom: 10px;
 	border-bottom: 5px solid #41CFC0;
 	font-size: 1.5em;
