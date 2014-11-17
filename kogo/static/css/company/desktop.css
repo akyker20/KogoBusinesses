@@ -190,3 +190,16 @@ p.contact-summary {
 	font-size: 1.5em;
 	width: 500px;
 }
+
+div.icons-container {
+	margin: 30px 0px;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+div.icon {
+	text-align: center;
+	width: 230px;
+	font-size: 75px;
+	float: left;
+}

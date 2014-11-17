@@ -54,14 +54,6 @@ WSGI_APPLICATION = 'kogo.wsgi.application'
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 't^a(uq)lf)!z#9myscrlxlc9s%r&xj*yj5#r9z8m1hu0&rf)xu'
 
-
-# Twitter stuff
-APP_KEY = 'RrqLed3fuoEOFwU0rVBcgnokL'
-APP_SECRET = 'yvDMzSHDdqk5xySQ39QKo9VlvklIxfrwOl1IXng3YQPv7BhiL0'
-from twython import Twython
-twitter = Twython(APP_KEY, APP_SECRET, oauth_version=2)
-ACCESS_TOKEN = twitter.obtain_access_token()
-
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
