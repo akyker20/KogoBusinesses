@@ -61,7 +61,7 @@ section.price-information {
 	overflow: auto;
 }
 
-section.service, section.why-kogo {
+section.service, section.why-kogo, section.students {
 	padding: 180px 200px;
 	width: 100%;
 	background: #33425A;
@@ -69,10 +69,30 @@ section.service, section.why-kogo {
 	overflow: auto;
 }
 
+section.students {
+	background: #337a5A;
+}
+
+
 div.service-left-container {
 	margin-bottom: 50px;
 	float: left;
 	width: 600px;
+}
+
+div.student-info-container {
+	margin-bottom: 50px;
+	float: right;
+	width: 600px;
+}
+
+div.student-video {
+	margin: 0px 0px 0px 20px;
+	height: 275px;
+	width: 490px;
+	background: gray;
+	opacity: 0.8;
+	float: left;
 }
 
 section.why-kogo h1 {
@@ -139,7 +159,7 @@ p.pricing-summary, p.summary {
 	font-size: 1.5em;
 }
 
-p.pricing-details {
+p.details {
 	font-size: 1.2em;
 }
 
