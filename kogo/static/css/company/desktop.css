@@ -38,7 +38,7 @@ section.intro h1, section.why-kogo h1, section.service h1 {
 }
 
 div.info-container {
-	width: 1200px;
+	width: 1300px;
 	margin: 0px auto;
 	overflow: auto;
 }
@@ -86,12 +86,7 @@ div.student-info-container {
 	width: 600px;
 }
 
-div.student-video {
-	margin: 0px 0px 0px 20px;
-	height: 275px;
-	width: 490px;
-	background: gray;
-	opacity: 0.8;
+div#student-video-player {
 	float: left;
 }
 
