@@ -11,13 +11,41 @@ $(document).ready(function(){
 		var hoverDate = new Date();
 		if(hoverDate.getTime() - lastHoverDate.getTime() > halfASecond) {
 			var data = $(this).data("id");
-			$("div.icon-info:visible").hide();
+			$("div.icon-info:visible").each(function(index) {
+        deselectImage($("div.icon[data-id=" + $(this).data("id") + "] img")[0]);
+      });
+      $("div.icon-info:visible").hide();
+
 			var infoContainerToShow = $("div.icon-info[data-id=" + data + "]");
+      var imgSelected = $(this).find("img");
+      selectImage(imgSelected[0]);
 			infoContainerToShow.fadeIn(1000);
 			lastHoverDate = hoverDate;
 		}
 	}, function() {});
 });
+
+String.prototype.splice = function( idx, rem, s ) {
+    return (this.slice(0,idx) + s + this.slice(idx + Math.abs(rem)));
+};
+
+var selectImage = function(img) {
+  if(!$(img).hasClass("selected")) {
+    var unselectedSrc = $(img).attr('src');
+    var insertIndex = unselectedSrc.indexOf(".");
+    $(img).attr('src', unselectedSrc.slice(0, insertIndex) + "S.png");
+    $(img).addClass("selected");
+  }
+};
+
+var deselectImage = function(img) {
+  if($(img).hasClass("selected")) {
+    var selectedSrc = $(img).attr('src');
+    var insertIndex = selectedSrc.indexOf(".");
+    $(img).attr('src', selectedSrc.slice(0, insertIndex-1) + ".png");
+    $(img).removeClass("selected");
+  }
+}
 
 var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
 	var screenHeight = $(window).height();
@@ -36,7 +64,6 @@ var tag = document.createElement('script');
     //    after the API code downloads.
     var player;
     function onYouTubeIframeAPIReady() {
-    	alert("Hello");
       player = new YT.Player('student-video-player', {
         height: '390',
         width: '640',

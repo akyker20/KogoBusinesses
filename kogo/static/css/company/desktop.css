@@ -37,9 +37,16 @@ section.intro h1, section.why-kogo h1, section.service h1 {
 	font-size: 50px;
 }
 
+p.no-border {
+	border-bottom: none;
+}
+
 div.info-container {
 	width: 1300px;
 	margin: 0px auto;
+}
+
+section.intro div.info-container {
 	overflow: auto;
 }
 
@@ -90,9 +97,33 @@ div#student-video-player {
 	float: left;
 }
 
+
+
 section.why-kogo h1 {
 	text-align: center;
 	margin-bottom: 50px;
+}
+
+section.why-kogo img {
+	width: 140px;
+}
+
+section h1 {
+	font-size: 50px;
+}
+
+section.why-kogo h1 {
+	font-size: 70px;
+	margin-bottom: 90px;
+}
+
+section.why-kogo div.icon-info, section.why-kogo p.summary {
+	font-size: 3.0em;
+	font-family: "Titillium Web",sans-serif;
+}
+
+section.why-kogo p.summary {
+	font-size: 1.8em;
 }
 
 div.service-video {
@@ -206,6 +237,10 @@ p.contact-summary {
 	width: 500px;
 }
 
+div.icon-info-container {
+	margin-top: 80px;
+}
+
 div.icons-container {
 	margin: 30px 0px;
 	overflow: auto;
@@ -214,7 +249,6 @@ div.icons-container {
 
 div.icon {
 	text-align: center;
-	width: 230px;
-	font-size: 75px;
+	width: 260px;
 	float: left;
 }
