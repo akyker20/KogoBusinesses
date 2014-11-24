@@ -87,14 +87,15 @@ var tag = document.createElement('script');
     //    the player should play for six seconds and then stop.
     var done = false;
     function onPlayerStateChange(event, player) {
-      alert("In here");
       if (event.data == YT.PlayerState.PLAYING && !done) {
         setTimeout(stopVideo(player), 6000);
         done = true;
       }
+      else if(event.data == YT.PlayerState.ENDED) {
+        stopVideo(player);
+      }
     }
     function stopVideo(player) {
-      alert("Stopping video");
       player.seekTo(0, false);
       player.stopVideo();
     }
