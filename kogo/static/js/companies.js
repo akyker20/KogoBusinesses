@@ -64,12 +64,20 @@ var tag = document.createElement('script');
     //    after the API code downloads.
     var player;
     function onYouTubeIframeAPIReady() {
-      player = new YT.Player('student-video-player', {
+      player1 = new YT.Player('student-video-player', {
         height: '390',
         width: '640',
         videoId: 'gvJjzYlFcK4',
         events: {
-          'onStateChange': onPlayerStateChange
+          'onStateChange': onPlayerStateChange(this)
+        }
+      });
+      player2 = new YT.Player('service-video-player', {
+        height: '390',
+        width: '640',
+        videoId: 'eh4sbgBwZKA',
+        events: {
+          'onStateChange': onPlayerStateChange(this)
         }
       });
     }
@@ -78,12 +86,15 @@ var tag = document.createElement('script');
     //    The function indicates that when playing a video (state=1),
     //    the player should play for six seconds and then stop.
     var done = false;
-    function onPlayerStateChange(event) {
+    function onPlayerStateChange(event, player) {
+      alert("In here");
       if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo, 6000);
+        setTimeout(stopVideo(player), 6000);
         done = true;
       }
     }
-    function stopVideo() {
+    function stopVideo(player) {
+      alert("Stopping video");
+      player.seekTo(0, false);
       player.stopVideo();
     }

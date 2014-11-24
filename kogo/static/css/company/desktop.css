@@ -84,7 +84,7 @@ section.students {
 div.service-left-container {
 	margin-bottom: 50px;
 	float: left;
-	width: 600px;
+	width: 550px;
 }
 
 div.student-info-container {
@@ -126,13 +126,9 @@ section.why-kogo p.summary {
 	font-size: 1.8em;
 }
 
-div.service-video {
-	margin: 100px 0px 0px 20px;
-	height: 275px;
-	width: 490px;
-	background: gray;
-	opacity: 0.8;
+#service-video-player {
 	float: right;
+	margin-top: 40px;
 }
 
 div.reasons-container h1 {
