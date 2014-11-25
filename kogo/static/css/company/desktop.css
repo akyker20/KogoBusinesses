@@ -117,8 +117,8 @@ section.why-kogo h1 {
 	margin-bottom: 90px;
 }
 
-section.why-kogo div.icon-info, section.why-kogo p.summary {
-	font-size: 3.0em;
+section.why-kogo div.icon-info {
+	font-size: 2.5em;
 	font-family: "Titillium Web",sans-serif;
 }
 
