@@ -114,7 +114,7 @@ section.why-kogo h1 {
 }
 
 section.why-kogo div.icon-info {
-	font-size: 2.5em;
+	font-size: 2.2em;
 	font-family: "Titillium Web",sans-serif;
 	height: 215px;
 }
@@ -167,34 +167,31 @@ ul.reasons-list li {
 }
 
 div.left-container {
-	width: 550px;
+	width: 680px;
 	float: left;
 	padding: 10px;
-}
-
-div.left-container h1 {
-	font-size: 50px;
 }
 
 .right {
 	float: right;
 }
 
-p.pricing-summary, p.summary {
+p.summary {
+	font-family: "Titillium Web",sans-serif;
 	padding-bottom: 10px;
 	border-bottom: 5px solid #41CFC0;
-	font-size: 1.5em;
+	font-size: 1.6em;
 }
 
 p.details {
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 div.right-container {
 	float: right;
 	width: 500px;
 	padding: 10px;
-	margin-top: 20px;
+	margin-top: 50px;
 }
 
 div.right-container h1 {
@@ -227,7 +224,6 @@ section.contact-info {
 	width: 100%;
 	background-size: 100%;
 	text-align: center;
-	padding: 120px;
 }
 
 div.contact-info-container h1.lg {
@@ -257,4 +253,8 @@ div.icon {
 	text-align: center;
 	width: 260px;
 	float: left;
+}
+
+h1.sm {
+	font-size: 40px;
 }
