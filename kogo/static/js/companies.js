@@ -7,6 +7,13 @@ $(document).ready(function(){
 	var lastHoverDate = new Date();
 	var halfASecond = 500;
 
+  $("ul.scroll-links li a").click(function() {
+    var scrollSection = $(this).data("section");
+    $('html,body').animate({
+        scrollTop: $("section." + scrollSection).offset().top},
+        'slow');
+  });
+
 	$("div.icon").hover(function(){
 		var hoverDate = new Date();
 		if(hoverDate.getTime() - lastHoverDate.getTime() > halfASecond) {

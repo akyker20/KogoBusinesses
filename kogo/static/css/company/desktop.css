@@ -44,7 +44,11 @@ p.no-border {
 div.info-container {
 	width: 1300px;
 	margin: 0px auto;
+	overflow: auto;
+	overflow-y: hidden;
 }
+
+
 
 section.intro div.info-container {
 	overflow: auto;
@@ -60,24 +64,29 @@ div.intro-left-container p {
 	font-weight: 200;
 }
 
-section.price-information {
-	padding: 170px 200px 190px 200px;
+section.pricing {
+	padding: 180px 0px;
 	width: 100%;
 	background-size: 100%;
 	background: white;
 	overflow: auto;
 }
 
-section.service, section.why-kogo, section.students {
-	padding: 180px 200px;
+section {
+	padding: 180px 0px;
+	overflow: auto;
 	width: 100%;
+}
+
+
+section.service, 
+section.why-kogo {
 	background: #33425A;
 	color: white;
-	overflow: auto;
 }
 
 section.students {
-	background: #337a5A;
+	background: white;
 }
 
 
@@ -93,11 +102,10 @@ div.student-info-container {
 	width: 600px;
 }
 
-div#student-video-player {
+div#student-video-player, 
+iframe#student-video-player {
 	float: left;
 }
-
-
 
 section.why-kogo h1 {
 	text-align: center;
@@ -120,6 +128,11 @@ section.why-kogo h1 {
 section.why-kogo div.icon-info {
 	font-size: 2.5em;
 	font-family: "Titillium Web",sans-serif;
+	height: 120px;
+}
+
+ul.scroll-links li a:hover {
+	cursor: pointer;
 }
 
 section.why-kogo p.summary {
