@@ -29,7 +29,10 @@ $(document).ready(function(){
 			infoContainerToShow.fadeIn(1000);
 			lastHoverDate = hoverDate;
 		}
-	}, function() {});
+	}, function(){
+    $("div.icon-info:visible").fadeOut();
+    deselectImage($("img.selected"));
+  });
 });
 
 String.prototype.splice = function( idx, rem, s ) {
