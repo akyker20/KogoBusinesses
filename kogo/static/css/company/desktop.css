@@ -33,16 +33,12 @@ div.intro-left-container h1 {
 	padding-top: 40px
 }
 
-section.intro h1, section.why-kogo h1, section.service h1 {
-	font-size: 50px;
-}
-
 p.no-border {
 	border-bottom: none;
 }
 
 div.info-container {
-	width: 1200px;
+	width: 1100px;
 	margin: 0px auto;
 	overflow: auto;
 	overflow-y: hidden;
@@ -55,7 +51,7 @@ section.intro div.info-container {
 }
 
 section.intro p.lighter {
-	font-size: 26px;
+	font-size: 23px;
 	color: gray;
 }
 
@@ -82,13 +78,13 @@ section {
 div.service-left-container {
 	margin-bottom: 50px;
 	float: left;
-	width: 550px;
+	width: 450px;
 }
 
 div.student-info-container {
 	margin-bottom: 50px;
 	float: right;
-	width: 600px;
+	width: 500px;
 }
 
 div#student-video-player, 
@@ -111,7 +107,7 @@ section.why-kogo div.info-container {
 }
 
 section h1 {
-	font-size: 50px;
+	font-size: 42px;
 	color: black;
 }
 
@@ -145,7 +141,7 @@ div.reasons-container h1 {
 
 ul.how-service-works {
 	list-style: none;
-	font-size: 1.6em;
+	font-size: 1.3em;
 	font-family: "Titillium Web",sans-serif;
 }
 
@@ -156,12 +152,12 @@ ul.how-service-works li:not(:last-child) {
 ul.how-service-works li div.glyphicon {
 	float: left;
 	font-size: 40px;
-	margin: 8px 20px 0px 0px;
+	margin: 3px 20px 0px 0px;
 }
 
 section.why-kogo ul {
 	list-style: decimal;
-	font-size: 1.6em;
+	font-size: 1.3em;
 	font-family: "Titillium Web",sans-serif;
 }
 
@@ -170,7 +166,7 @@ ul.reasons-list li {
 }
 
 div.left-container {
-	width: 636px;
+	width: 520px;
 	float: left;
 	padding: 10px;
 }
@@ -183,11 +179,11 @@ p.summary {
 	font-family: "Titillium Web",sans-serif;
 	padding-bottom: 10px;
 	border-bottom: 5px solid #41CFC0;
-	font-size: 1.6em;
+	font-size: 1.3em;
 }
 
 p.details {
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 div.right-container {
@@ -208,18 +204,22 @@ div.list-container {
 ul.sample-list {
 	list-style: none;
 	padding-left: 0px;
-	font-size: 18px;
+	font-size: 1.2em;
 }
 
 ul.sample-list li.active {
-	font-size: 30px;
-	font-family: "Titillium Web",sans-serif;
+	font-size: 26px;
+	font-family: "Titillium Web", sans-serif;
 }
 
 ul.sample-list li {
 	border-bottom: 1px solid rgb(237, 237, 237);
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+ul.sample-list li strong {
+	color: black;
 }
 
 section.contact-info {
@@ -254,7 +254,7 @@ div.icons-container {
 
 div.icon {
 	text-align: center;
-	width: 240px;
+	width: 220px;
 	float: left;
 }
 
