@@ -75,16 +75,16 @@ var tag = document.createElement('script');
     var player;
     function onYouTubeIframeAPIReady() {
       player1 = new YT.Player('student-video-player', {
-        height: '390',
-        width: '640',
+        height: '335',
+        width: '550',
         videoId: 'gvJjzYlFcK4',
         events: {
           'onStateChange': onPlayerStateChange(this)
         }
       });
       player2 = new YT.Player('service-video-player', {
-        height: '390',
-        width: '640',
+        height: '335',
+        width: '550',
         videoId: 'eh4sbgBwZKA',
         events: {
           'onStateChange': onPlayerStateChange(this)
