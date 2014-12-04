@@ -6,7 +6,6 @@ section.intro {
 	background: white;
 	width: 100%;
 	background-size: 100%;
-	padding: 115px;
 }
 
 div.video-holder {
@@ -20,7 +19,7 @@ div.video-holder {
 
 img.android {
 	float: right;
-	width: 500px;
+	width: 485px;
 }
 
 div.intro-left-container {
@@ -115,10 +114,6 @@ section.why-kogo div.icon-info {
 	font-size: 2.2em;
 	font-family: "Titillium Web",sans-serif;
 	height: 215px;
-}
-
-ul.scroll-links {
-	border-bottom: 1px solid LightGray;
 }
 
 ul.scroll-links li a:hover {

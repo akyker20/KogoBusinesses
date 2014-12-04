@@ -61,7 +61,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
 	var screenHeight = $(window).height();
 	var paddingOffset = 378;
 	var correctPadding = screenHeight/2 - paddingOffset;
-	$("section.intro").css("padding", correctPadding);
+	$("section.intro").css("padding-top", correctPadding + 70);
+  $("section.intro").css("padding-bottom", correctPadding - 70);
 };
 
 var tag = document.createElement('script');
