@@ -17,10 +17,11 @@ iframe#intro-video-player {
 img.iPhone {
 	float: right;
 	width: 330px;
+	margin-top: 10px;
 }
 
 div.intro-left-container {
-	width: 520px;
+	width: 605px;
 	float: left;
 }
 

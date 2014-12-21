@@ -76,8 +76,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
     var player;
     function onYouTubeIframeAPIReady() {
         player1 = new YT.Player('intro-video-player', {
-        height: '329',
-        width: '540',
+        height: '365',
+        width: '600',
         videoId: 'sKHdXQGeZPQ',
         events: {
             'onStateChange': onPlayerStateChange
