@@ -65,48 +65,50 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
   $("section.intro").css("padding-bottom", correctPadding - 70);
 };
 
-var tag = document.createElement('script');
 
+
+    //Load player api asynchronously.
+    var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // 3. This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
+    var done = false;
     var player;
     function onYouTubeIframeAPIReady() {
-      player1 = new YT.Player('student-video-player', {
+        player1 = new YT.Player('intro-video-player', {
         height: '335',
         width: '550',
-        videoId: 'gvJjzYlFcK4',
+        videoId: 'sKHdXQGeZPQ',
         events: {
-          'onStateChange': onPlayerStateChange(this)
-        }
-      });
-      player2 = new YT.Player('service-video-player', {
-        height: '335',
-        width: '550',
-        videoId: 'eh4sbgBwZKA',
-        events: {
-          'onStateChange': onPlayerStateChange(this)
-        }
-      });
+            'onStateChange': onPlayerStateChange
+          }
+        });
+
+        player1 = new YT.Player('service-video-player', {
+          height: '335',
+          width: '550',
+          videoId: 'eh4sbgBwZKA',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
+
+        player1 = new YT.Player('student-video-player', {
+          height: '335',
+          width: '550',
+          videoId: 'gvJjzYlFcK4',
+          events: {
+            'onStateChange': onPlayerStateChange
+          }
+        });
     }
 
-    // 5. The API calls this function when the player's state changes.
-    //    The function indicates that when playing a video (state=1),
-    //    the player should play for six seconds and then stop.
-    var done = false;
-    function onPlayerStateChange(event, player) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-        setTimeout(stopVideo(player), 6000);
-        done = true;
-      }
-      else if(event.data == YT.PlayerState.ENDED) {
-        stopVideo(player);
-      }
+    function onPlayerStateChange(evt) {
+        if(evt.data === YT.PlayerState.ENDED) {
+          evt.target.stopVideo();
+          evt.target.seekTo(0);
+        }
     }
-    function stopVideo(player) {
-      player.seekTo(0, false);
-      player.stopVideo();
+    function stopVideo() {
+        player.stopVideo();
     }
