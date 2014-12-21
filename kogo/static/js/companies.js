@@ -61,8 +61,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
 	var screenHeight = $(window).height();
 	var paddingOffset = 378;
 	var correctPadding = screenHeight/2 - paddingOffset;
-	$("section.intro").css("padding-top", correctPadding + 70);
-  $("section.intro").css("padding-bottom", correctPadding - 70);
+	$("section.intro").css("padding-top", correctPadding + 85);
+  $("section.intro").css("padding-bottom", correctPadding - 85);
 };
 
 
@@ -76,8 +76,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
     var player;
     function onYouTubeIframeAPIReady() {
         player1 = new YT.Player('intro-video-player', {
-        height: '335',
-        width: '550',
+        height: '329',
+        width: '540',
         videoId: 'sKHdXQGeZPQ',
         events: {
             'onStateChange': onPlayerStateChange

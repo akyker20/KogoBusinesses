@@ -11,8 +11,6 @@ section.intro {
 div#intro-video-player,
 iframe#intro-video-player {
 	margin: 35px 0px 0px 0px;
-	height: 300px;
-	width: 550px;
 }
 
 
@@ -117,9 +115,13 @@ section.why-kogo div.icon-info {
 	height: 215px;
 }
 
+ul.scroll-links li a {
+	color: white !important;
+}
+
 ul.scroll-links li a:hover {
 	cursor: pointer;
-	color: #DADADA !important;
+	color: #F0F0F0 !important;
 }
 
 section.why-kogo p.summary {
