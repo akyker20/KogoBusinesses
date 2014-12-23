@@ -1,0 +1,35 @@
+/*Differences*/
+
+div.icon {
+	width: 210px;
+}
+
+div.service-left-container {
+	width: 440px;
+}
+
+div.right-container {
+	width: 445px;
+}
+
+div.info-container {
+	width: 1050px;
+}
+
+div.student-info-container {
+	width: 430px;
+}
+
+img.iPhone {
+	width: 310px;
+	margin-top: 10px;
+}
+
+nav div.container-fluid {
+	margin-top: 5px;
+	width: 1100px;
+}
+
+nav.navbar.navbar-inverse {
+	height: 60px;
+}
