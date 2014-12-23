@@ -16,12 +16,12 @@ iframe#intro-video-player {
 
 img.iPhone {
 	float: right;
-	width: 330px;
-	margin-top: 10px;
+	width: 290px;
+	margin-top: 22px;
 }
 
 div.intro-left-container {
-	width: 605px;
+	width: 600px;
 	float: left;
 }
 
@@ -35,7 +35,7 @@ p.no-border {
 }
 
 div.info-container {
-	width: 1100px;
+	width: 1000px;
 	margin: 0px auto;
 	overflow: auto;
 	overflow-y: hidden;
@@ -47,7 +47,7 @@ section.intro div.info-container {
 }
 
 section.intro p.lighter {
-	font-size: 23px;
+	font-size: 21px;
 	color: gray;
 }
 
@@ -74,13 +74,13 @@ section {
 div.service-left-container {
 	margin-bottom: 50px;
 	float: left;
-	width: 450px;
+	width: 435px;
 }
 
 div.student-info-container {
 	margin-bottom: 50px;
 	float: right;
-	width: 500px;
+	width: 445px;
 }
 
 div#student-video-player, 
@@ -131,7 +131,7 @@ section.why-kogo p.summary {
 
 #service-video-player {
 	float: right;
-	margin-top: 40px;
+	margin-top: 100px;
 }
 
 div.reasons-container h1 {
@@ -165,7 +165,7 @@ ul.reasons-list li {
 }
 
 div.left-container {
-	width: 520px;
+	width: 500px;
 	float: left;
 	padding: 10px;
 }
@@ -187,7 +187,7 @@ p.details {
 
 div.right-container {
 	float: right;
-	width: 480px;
+	width: 450px;
 	padding: 10px;
 	margin-top: 50px;
 }
@@ -253,7 +253,7 @@ div.icons-container {
 
 div.icon {
 	text-align: center;
-	width: 220px;
+	width: 200px;
 	float: left;
 }
 
@@ -293,7 +293,7 @@ div.navbar-header a.navbar-brand {
 
 nav div.container-fluid {
 	margin-top: 10px;
-	width: 1200px;
+	width: 1100px;
 }
 
 nav.navbar.navbar-inverse {

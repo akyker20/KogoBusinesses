@@ -59,10 +59,14 @@ var deselectImage = function(img) {
 
 var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
 	var screenHeight = $(window).height();
-	var paddingOffset = 378;
-	var correctPadding = screenHeight/2 - paddingOffset;
-	$("section.intro").css("padding-top", correctPadding + 85);
-  $("section.intro").css("padding-bottom", correctPadding - 85);
+	var introSectionHeight = $('section.intro').height();
+  var bannerHeight = $('nav.navbar').height();
+	var correctPadding = (screenHeight - introSectionHeight - bannerHeight)/2;
+  if(correctPadding < 30) {
+    correctPadding = 30;
+  }
+	$("section.intro").css("padding-top", correctPadding + bannerHeight);
+  $("section.intro").css("padding-bottom", correctPadding);
 };
 
 
@@ -76,8 +80,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
     var player;
     function onYouTubeIframeAPIReady() {
         player1 = new YT.Player('intro-video-player', {
-        height: '365',
-        width: '600',
+        height: '315',
+        width: '560',
         videoId: 'sKHdXQGeZPQ',
         events: {
             'onStateChange': onPlayerStateChange
@@ -85,8 +89,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
         });
 
         player1 = new YT.Player('service-video-player', {
-          height: '335',
-          width: '550',
+          height: '290',
+          width: '515',
           videoId: 'eh4sbgBwZKA',
           events: {
             'onStateChange': onPlayerStateChange
@@ -94,8 +98,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
         });
 
         player1 = new YT.Player('student-video-player', {
-          height: '335',
-          width: '550',
+          height: '290',
+          width: '515',
           videoId: 'gvJjzYlFcK4',
           events: {
             'onStateChange': onPlayerStateChange
