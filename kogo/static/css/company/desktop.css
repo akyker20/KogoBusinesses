@@ -37,13 +37,7 @@ p.no-border {
 div.info-container {
 	width: 1000px;
 	margin: 0px auto;
-	overflow: auto;
-	overflow-y: hidden;
-}
-
-
-section.intro div.info-container {
-	overflow: auto;
+	overflow: hidden;
 }
 
 section.intro p.lighter {

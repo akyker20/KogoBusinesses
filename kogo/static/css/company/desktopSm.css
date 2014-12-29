@@ -1,0 +1,116 @@
+
+div.info-container {
+	width: 575px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+img.iPhone {
+	width: 300px;
+	float: none;
+	margin-top: 80px;
+	margin-left: 140px;
+}
+
+div.intro-left-container {
+	margin: 0px auto;
+	float: none;
+}
+
+section.why-kogo div.icon-info {
+	font-size: 1.5em;
+}
+
+
+div.service-left-container {
+	margin: 0px auto;
+	margin-bottom: 50px;
+	float: none;
+}
+
+div.student-info-container {
+	margin: 0px auto;
+	float: none;
+}
+
+#student-video-player,
+#service-video-player {
+	margin: 30px;
+	float: none;
+}
+
+section.why-kogo img {
+	width: 80px;
+}
+
+div.left-container {
+	width: 500px;
+	margin: 0px auto;
+	float: none;
+	padding: 10px;
+}
+
+div.right-container {
+	margin: 0px auto;
+	float: none;
+}
+
+div.list-container {
+	margin: 0px auto;
+}
+
+
+div.icon-info-container {
+	margin-top: 80px;
+}
+
+div.icons-container {
+	margin: 30px 0px;
+	overflow: auto;
+	overflow-y: hidden;
+}
+
+div.icon {
+	text-align: center;
+	width: 20%;
+	float: left;
+}
+
+
+
+/*Universal element and class styling*/
+
+
+
+
+/* Navbar styling */
+
+div.navbar-header a.navbar-brand {
+	color: white;
+	padding-top: 11px;
+}
+
+nav div.container-fluid {
+	margin-top: 10px;
+	width: 100%;
+}
+
+nav.navbar.navbar-inverse {
+	background: #41CFC0;
+	margin-bottom: 0px;
+	height: 60px;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid LightGray;
+}
+
+a.navbar-brand {
+	font-size: 34px;
+}
+
+ul.nav li {
+	text-align: right;
+	font-size: 1.2em;
+}
