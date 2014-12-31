@@ -1,7 +1,6 @@
 $(document).ready(function(){
-	resetPaddingOfIntroSectionToFitBrowserHeight();
 	$( window ).resize(function() {
-  		resetPaddingOfIntroSectionToFitBrowserHeight();
+      resetPaddingOfIntroSection();  		
 	});
 
 	var lastHoverDate = new Date();
@@ -57,7 +56,7 @@ var deselectImage = function(img) {
   }
 }
 
-var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
+var resetPaddingOfIntroSection = function() {
 	var screenHeight = $(window).height();
 	var introSectionHeight = $('section.intro').height();
   var bannerHeight = $('nav.navbar').height();
@@ -84,7 +83,8 @@ var resetPaddingOfIntroSectionToFitBrowserHeight = function() {
         width: '560',
         videoId: 'sKHdXQGeZPQ',
         events: {
-            'onStateChange': onPlayerStateChange
+            'onStateChange': onPlayerStateChange,
+            'onReady': resetPaddingOfIntroSection
           }
         });
 
